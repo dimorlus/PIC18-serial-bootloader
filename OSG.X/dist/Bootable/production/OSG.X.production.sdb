@@ -1,0 +1,698 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK SPACEOPT EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F24K40 ]
+[d frameptr 4065 ]
+"88 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/tmr2.c
+[e E9043 . `uc
+TMR2_ROP_STARTS_TMRON 0
+TMR2_ROP_STARTS_TMRON_ERSHIGH 1
+TMR2_ROP_STARTS_TMRON_ERSLOW 2
+TMR2_ROP_RESETS_ERSBOTHEDGE 3
+TMR2_ROP_RESETS_ERSRISINGEDGE 4
+TMR2_ROP_RESETS_ERSFALLINGEDGE 5
+TMR2_ROP_RESETS_ERSLOW 6
+TMR2_ROP_RESETS_ERSHIGH 7
+TMR2_OS_STARTS_TMRON 8
+TMR2_OS_STARTS_ERSRISINGEDGE 9
+TMR2_OS_STARTS_ERSFALLINGEDGE 10
+TMR2_OS_STARTS_ERSBOTHEDGE 11
+TMR2_OS_STARTS_ERSFIRSTRISINGEDGE 12
+TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE 13
+TMR2_OS_STARTS_ERSRISINGEDGEDETECT 14
+TMR2_OS_STARTS_ERSFALLINGEDGEDETECT 15
+TMR2_OS_STARTS_TMRON_ERSHIGH 22
+TMR2_OS_STARTS_TMRON_ERSLOW 23
+TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT 17
+TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT 18
+TMR2_MS_STARTS_TMRON_ERSBOTHEDGE 19
+]
+"94
+[e E9066 . `uc
+TMR2_T2INPPS 0
+TMR2_RESERVED 1
+TMR2_T4POSTSCALED 2
+TMR2_T6POSTSCALED 3
+TMR2_CCP1_OUT 4
+TMR2_CCP2_OUT 5
+TMR2_PWM3_OUT 6
+TMR2_PWM4_OUT 7
+TMR2_C1_OUT_SYNC 8
+TMR2_C2_OUT_SYNC 9
+TMR2_ZCD_OUTPUT 10
+]
+"185 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/i2c1.c
+[e E9044 . `uc
+I2C1_MESSAGE_COMPLETE 0
+I2C1_MESSAGE_FAIL 1
+I2C1_MESSAGE_PENDING 2
+I2C1_STUCK_START 3
+I2C1_MESSAGE_ADDRESS_NO_ACK 4
+I2C1_DATA_NO_ACK 5
+I2C1_LOST_STATE 6
+]
+"187
+[e E9107 . `uc
+S_MASTER_IDLE 0
+S_MASTER_RESTART 1
+S_MASTER_SEND_ADDR 2
+S_MASTER_SEND_DATA 3
+S_MASTER_SEND_STOP 4
+S_MASTER_ACK_ADDR 5
+S_MASTER_RCV_DATA 6
+S_MASTER_RCV_STOP 7
+S_MASTER_ACK_RCV_DATA 8
+S_MASTER_NOACK_STOP 9
+S_MASTER_SEND_ADDR_10BIT_LSB 10
+S_MASTER_10BIT_RESTART 11
+]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"77 D:\Projects\LED\Alex\OSG\Controller\OSG.X\main.c
+[v _Tmr0intr Tmr0intr `(v  1 e 1 0 ]
+"89
+[v _main main `(v  1 e 1 0 ]
+"75 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"172
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+"191
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+"211
+[v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
+"215
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+"198 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/i2c1.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+"235
+[v _I2C1_ISR I2C1_ISR `(v  1 e 1 0 ]
+"565
+[v _I2C1_FunctionComplete I2C1_FunctionComplete `(v  1 e 1 0 ]
+"583
+[v _I2C1_Stop I2C1_Stop `(v  1 e 1 0 ]
+"644
+[v _I2C1_WaitForLastPacketToComplete I2C1_WaitForLastPacketToComplete `T(v  1 e 1 0 ]
+"654
+[v _I2C1_MasterTRBInsert I2C1_MasterTRBInsert `(v  1 e 1 0 ]
+"708
+[v _I2C1_MasterReadTRBBuild I2C1_MasterReadTRBBuild `(v  1 e 1 0 ]
+"721
+[v _I2C1_MasterWriteTRBBuild I2C1_MasterWriteTRBBuild `(v  1 e 1 0 ]
+"742
+[v _I2C1_BusCollisionISR I2C1_BusCollisionISR `(v  1 e 1 0 ]
+"52 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"58
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+"50 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"64
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"78
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"59 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/memory.c
+[v _FLASH_ReadByte FLASH_ReadByte `(uc  1 e 1 0 ]
+"95
+[v _FLASH_WriteBlock FLASH_WriteBlock `(c  1 e 1 0 ]
+"143
+[v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
+"57 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"58 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+"58 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/pwm4.c
+[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
+"61 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"121
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"134
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"138
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"62 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"100
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+"111
+[v _TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+"122
+[v _TMR2_Counter8BitGet TMR2_Counter8BitGet `(uc  1 e 1 0 ]
+"136
+[v _TMR2_Counter8BitSet TMR2_Counter8BitSet `(v  1 e 1 0 ]
+"147
+[v _TMR2_Period8BitSet TMR2_Period8BitSet `(v  1 e 1 0 ]
+"85 D:\Projects\LED\Alex\OSG\Controller\OSG.X/mcc_generated_files/eusart.h
+[v _EUSART_TxDefaultInterruptHandler EUSART_TxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+"86
+[v _EUSART_RxDefaultInterruptHandler EUSART_RxDefaultInterruptHandler `*.37(v  1 e 2 0 ]
+"1517 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f24k40.h
+[v _RXPPS RXPPS `VEuc  1 e 1 @3765 ]
+"1896
+[v _SSP1CLKPPS SSP1CLKPPS `VEuc  1 e 1 @3767 ]
+"2106
+[v _SSP1DATPPS SSP1DATPPS `VEuc  1 e 1 @3768 ]
+[s S111 . 1 `uc 1 INT0IE 1 0 :1:0 
+`uc 1 INT1IE 1 0 :1:1 
+`uc 1 INT2IE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"2928
+[u S118 . 1 `S111 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES118  1 e 1 @3778 ]
+[s S206 . 1 `uc 1 SSP1IE 1 0 :1:0 
+`uc 1 BCL1IE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+]
+"3087
+[s S212 . 1 `uc 1 SSPIE 1 0 :1:0 
+`uc 1 BCLIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+]
+[s S218 . 1 `uc 1 RXB0IE 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXB2IE 1 0 :1:4 
+]
+[s S223 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIE 1 0 :1:4 
+]
+[u S228 . 1 `S206 1 . 1 0 `S212 1 . 1 0 `S218 1 . 1 0 `S223 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES228  1 e 1 @3781 ]
+[s S94 . 1 `uc 1 INT0IF 1 0 :1:0 
+`uc 1 INT1IF 1 0 :1:1 
+`uc 1 INT2IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"3327
+[u S101 . 1 `S94 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES101  1 e 1 @3786 ]
+[s S799 . 1 `uc 1 SSP1IF 1 0 :1:0 
+`uc 1 BCL1IF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+]
+"3480
+[s S805 . 1 `uc 1 SSPIF 1 0 :1:0 
+`uc 1 BCLIF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+[s S811 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TXBNIF 1 0 :1:4 
+]
+[u S816 . 1 `S799 1 . 1 0 `S805 1 . 1 0 `S811 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES816  1 e 1 @3789 ]
+[s S471 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 TMR3IF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 TMR5IF 1 0 :1:4 
+`uc 1 TMR6IF 1 0 :1:5 
+]
+"3550
+[u S478 . 1 `S471 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES478  1 e 1 @3790 ]
+"4268
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @3800 ]
+"4408
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @3802 ]
+"4560
+[v _OSCEN OSCEN `VEuc  1 e 1 @3804 ]
+"4611
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3805 ]
+"4669
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @3806 ]
+"4776
+[v _PMD0 PMD0 `VEuc  1 e 1 @3809 ]
+"4853
+[v _PMD1 PMD1 `VEuc  1 e 1 @3810 ]
+"4917
+[v _PMD2 PMD2 `VEuc  1 e 1 @3811 ]
+"4962
+[v _PMD3 PMD3 `VEuc  1 e 1 @3812 ]
+"5000
+[v _PMD4 PMD4 `VEuc  1 e 1 @3813 ]
+"5042
+[v _PMD5 PMD5 `VEuc  1 e 1 @3814 ]
+"5810
+[v _RC1PPS RC1PPS `VEuc  1 e 1 @3832 ]
+"5854
+[v _RC2PPS RC2PPS `VEuc  1 e 1 @3833 ]
+"5898
+[v _RC3PPS RC3PPS `VEuc  1 e 1 @3834 ]
+"5942
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @3835 ]
+"6030
+[v _RC6PPS RC6PPS `VEuc  1 e 1 @3837 ]
+"6366
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @3854 ]
+"6428
+[v _ODCONA ODCONA `VEuc  1 e 1 @3855 ]
+"6490
+[v _WPUA WPUA `VEuc  1 e 1 @3856 ]
+"6552
+[v _ANSELA ANSELA `VEuc  1 e 1 @3857 ]
+"6862
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @3862 ]
+"6924
+[v _ODCONB ODCONB `VEuc  1 e 1 @3863 ]
+"6986
+[v _WPUB WPUB `VEuc  1 e 1 @3864 ]
+"7048
+[v _ANSELB ANSELB `VEuc  1 e 1 @3865 ]
+"7358
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @3870 ]
+"7420
+[v _ODCONC ODCONC `VEuc  1 e 1 @3871 ]
+"7482
+[v _WPUC WPUC `VEuc  1 e 1 @3872 ]
+"7544
+[v _ANSELC ANSELC `VEuc  1 e 1 @3873 ]
+"7690
+[v _WPUE WPUE `VEuc  1 e 1 @3885 ]
+"14040
+[v _LATA LATA `VEuc  1 e 1 @3971 ]
+"14152
+[v _LATB LATB `VEuc  1 e 1 @3972 ]
+[s S1447 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"14179
+[s S1456 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S1465 . 1 `S1447 1 . 1 0 `S1456 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1465  1 e 1 @3972 ]
+"14264
+[v _LATC LATC `VEuc  1 e 1 @3973 ]
+"14376
+[v _TRISA TRISA `VEuc  1 e 1 @3976 ]
+"14498
+[v _TRISB TRISB `VEuc  1 e 1 @3977 ]
+"14620
+[v _TRISC TRISC `VEuc  1 e 1 @3978 ]
+"15022
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @3986 ]
+"15042
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @3987 ]
+"15232
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @3989 ]
+"15686
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @3990 ]
+[s S1024 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"15716
+[s S1030 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S1035 . 1 `uc 1 SSPM01 1 0 :1:0 
+`uc 1 SSPM11 1 0 :1:1 
+`uc 1 SSPM21 1 0 :1:2 
+`uc 1 SSPM31 1 0 :1:3 
+`uc 1 CKP1 1 0 :1:4 
+`uc 1 SSPEN1 1 0 :1:5 
+`uc 1 SSPOV1 1 0 :1:6 
+`uc 1 WCOL1 1 0 :1:7 
+]
+[u S1044 . 1 `S1024 1 . 1 0 `S1030 1 . 1 0 `S1035 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES1044  1 e 1 @3990 ]
+[s S1069 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"15853
+[s S1078 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK 1 0 :5:1 
+]
+[s S1081 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK1 1 0 :1:1 
+`uc 1 ADMSK2 1 0 :1:2 
+`uc 1 ADMSK3 1 0 :1:3 
+`uc 1 ADMSK4 1 0 :1:4 
+`uc 1 ADMSK5 1 0 :1:5 
+]
+[s S1088 . 1 `uc 1 SEN1 1 0 :1:0 
+`uc 1 ADMSK11 1 0 :1:1 
+`uc 1 ADMSK21 1 0 :1:2 
+`uc 1 ADMSK31 1 0 :1:3 
+`uc 1 ACKEN1 1 0 :1:4 
+`uc 1 ACKDT1 1 0 :1:5 
+`uc 1 ACKSTAT1 1 0 :1:6 
+`uc 1 GCEN1 1 0 :1:7 
+]
+[s S1097 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RSEN1 1 0 :1:1 
+`uc 1 PEN1 1 0 :1:2 
+`uc 1 RCEN1 1 0 :1:3 
+`uc 1 ADMSK41 1 0 :1:4 
+`uc 1 ADMSK51 1 0 :1:5 
+]
+[u S1104 . 1 `S1069 1 . 1 0 `S1078 1 . 1 0 `S1081 1 . 1 0 `S1088 1 . 1 0 `S1097 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES1104  1 e 1 @3991 ]
+"15993
+[v _SSP1CON3 SSP1CON3 `VEuc  1 e 1 @3992 ]
+"16055
+[v _RC1REG RC1REG `VEuc  1 e 1 @3993 ]
+"16109
+[v _TX1REG TX1REG `VEuc  1 e 1 @3994 ]
+"16170
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @3995 ]
+"16240
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @3996 ]
+"16294
+[v _RC1STA RC1STA `VEuc  1 e 1 @3997 ]
+[s S369 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"16335
+[s S378 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S381 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S384 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[s S386 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[u S389 . 1 `S369 1 . 1 0 `S378 1 . 1 0 `S381 1 . 1 0 `S384 1 . 1 0 `S386 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES389  1 e 1 @3997 ]
+"16579
+[v _TX1STA TX1STA `VEuc  1 e 1 @3998 ]
+"17023
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @3999 ]
+"17811
+[v _PWM4DCL PWM4DCL `VEuc  1 e 1 @4000 ]
+"17877
+[v _PWM4DCH PWM4DCH `VEuc  1 e 1 @4001 ]
+"18047
+[v _PWM4CON PWM4CON `VEuc  1 e 1 @4002 ]
+"18110
+[v _PWM3DCL PWM3DCL `VEuc  1 e 1 @4003 ]
+"18176
+[v _PWM3DCH PWM3DCH `VEuc  1 e 1 @4004 ]
+"18346
+[v _PWM3CON PWM3CON `VEuc  1 e 1 @4005 ]
+[s S27 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+`uc 1 P3TSEL 1 0 :2:4 
+`uc 1 P4TSEL 1 0 :2:6 
+]
+"18885
+[s S32 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+`uc 1 C1TSEL1 1 0 :1:1 
+`uc 1 C2TSEL0 1 0 :1:2 
+`uc 1 C2TSEL1 1 0 :1:3 
+`uc 1 P3TSEL0 1 0 :1:4 
+`uc 1 P3TSEL1 1 0 :1:5 
+`uc 1 P4TSEL0 1 0 :1:6 
+`uc 1 P4TSEL1 1 0 :1:7 
+]
+[u S41 . 1 `S27 1 . 1 0 `S32 1 . 1 0 ]
+[v _CCPTMRSbits CCPTMRSbits `VES41  1 e 1 @4014 ]
+"20126
+[v _T2TMR T2TMR `VEuc  1 e 1 @4027 ]
+"20164
+[v _T2PR T2PR `VEuc  1 e 1 @4028 ]
+"20202
+[v _T2CON T2CON `VEuc  1 e 1 @4029 ]
+"20348
+[v _T2HLT T2HLT `VEuc  1 e 1 @4030 ]
+"20476
+[v _T2CLKCON T2CLKCON `VEuc  1 e 1 @4031 ]
+"20634
+[v _T2RST T2RST `VEuc  1 e 1 @4032 ]
+"23495
+[v _TMR0L TMR0L `VEuc  1 e 1 @4051 ]
+"23633
+[v _TMR0H TMR0H `VEuc  1 e 1 @4052 ]
+"23887
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @4053 ]
+"23952
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @4054 ]
+[s S713 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"24805
+[s S721 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S725 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S729 . 1 `S713 1 . 1 0 `S721 1 . 1 0 `S725 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES729  1 e 1 @4082 ]
+"74 D:\Projects\LED\Alex\OSG\Controller\OSG.X\main.c
+[v __1ms _1ms `uc  1 e 1 0 ]
+"62 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/eusart.c
+[v _eusartTxHead eusartTxHead `VEuc  1 e 1 0 ]
+"63
+[v _eusartTxTail eusartTxTail `VEuc  1 e 1 0 ]
+"64
+[v _eusartTxBuffer eusartTxBuffer `VE[8]uc  1 e 8 0 ]
+"65
+[v _eusartTxBufferRemaining eusartTxBufferRemaining `VEuc  1 e 1 0 ]
+"67
+[v _eusartRxHead eusartRxHead `VEuc  1 e 1 0 ]
+"68
+[v _eusartRxTail eusartRxTail `VEuc  1 e 1 0 ]
+"69
+[v _eusartRxBuffer eusartRxBuffer `VE[8]uc  1 e 8 0 ]
+"70
+[v _eusartRxCount eusartRxCount `VEuc  1 e 1 0 ]
+[s S928 . 5 `us 1 address 2 0 `uc 1 length 1 2 `*.2uc 1 pbuffer 2 3 ]
+"185 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/i2c1.c
+[s S940 . 4 `uc 1 count 1 0 `*.30S928 1 ptrb_list 1 1 `*.2E9044 1 pTrFlag 2 2 ]
+[v _i2c1_tr_queue i2c1_tr_queue `[1]S940  1 s 4 i2c1_tr_queue ]
+"186
+[s S944 . 1 `uc 1 full 1 0 :1:0 
+`uc 1 empty 1 0 :1:1 
+`uc 1 reserved 1 0 :6:2 
+]
+[u S948 . 1 `S944 1 s 1 0 `uc 1 status 1 0 ]
+[s S951 . 5 `*.30S940 1 pTrTail 1 0 `*.30S940 1 pTrHead 1 1 `S948 1 trStatus 1 2 `uc 1 i2cDoneFlag 1 3 `uc 1 i2cErrors 1 4 ]
+[v _i2c1_object i2c1_object `S951  1 s 5 i2c1_object ]
+"187
+[v _i2c1_state i2c1_state `E9107  1 s 1 i2c1_state ]
+"188
+[v _i2c1_trb_count i2c1_trb_count `uc  1 s 1 i2c1_trb_count ]
+"190
+[v _p_i2c1_trb_current p_i2c1_trb_current `*.39S928  1 s 2 p_i2c1_trb_current ]
+"191
+[v _p_i2c1_current p_i2c1_current `*.39VES940  1 s 2 p_i2c1_current ]
+"59 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/tmr0.c
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+"89 D:\Projects\LED\Alex\OSG\Controller\OSG.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"120
+} 0
+"50 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"62
+} 0
+"62 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"86
+} 0
+"61 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"134
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 9 ]
+"136
+} 0
+"58 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/pwm4.c
+[v _PWM4_Initialize PWM4_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
+"58 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
+"78 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"57 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"117
+} 0
+"64 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"52 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"198 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/i2c1.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+{
+"224
+} 0
+"75 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"111
+} 0
+"211
+[v _EUSART_SetTxInterruptHandler EUSART_SetTxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetTxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 9 ]
+"213
+} 0
+"215
+[v _EUSART_SetRxInterruptHandler EUSART_SetRxInterruptHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetRxInterruptHandler@interruptHandler interruptHandler `*.37(v  1 p 2 9 ]
+"217
+} 0
+"58 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
+{
+"92
+} 0
+"121 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"131
+} 0
+"138
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"141
+} 0
+"77 D:\Projects\LED\Alex\OSG\Controller\OSG.X\main.c
+[v _Tmr0intr Tmr0intr `(v  1 e 1 0 ]
+{
+"86
+} 0
+"235 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/i2c1.c
+[v _I2C1_ISR I2C1_ISR `(v  1 e 1 0 ]
+{
+"238
+[v I2C1_ISR@pi2c_buf_ptr pi2c_buf_ptr `*.2uc  1 s 2 pi2c_buf_ptr ]
+"239
+[v I2C1_ISR@i2c_address i2c_address `us  1 s 2 i2c_address ]
+"240
+[v I2C1_ISR@i2c_bytes_left i2c_bytes_left `uc  1 s 1 i2c_bytes_left ]
+"241
+[v I2C1_ISR@i2c_10bit_address_restart i2c_10bit_address_restart `uc  1 s 1 i2c_10bit_address_restart ]
+"563
+} 0
+"583
+[v _I2C1_Stop I2C1_Stop `(v  1 e 1 0 ]
+{
+[v I2C1_Stop@completion_code completion_code `E9044  1 a 1 wreg ]
+[v I2C1_Stop@completion_code completion_code `E9044  1 a 1 wreg ]
+"586
+[v I2C1_Stop@completion_code completion_code `E9044  1 a 1 2 ]
+"598
+} 0
+"565
+[v _I2C1_FunctionComplete I2C1_FunctionComplete `(v  1 e 1 0 ]
+{
+"581
+} 0
+"742
+[v _I2C1_BusCollisionISR I2C1_BusCollisionISR `(v  1 e 1 0 ]
+{
+"746
+} 0
+"172 D:\Projects\LED\Alex\OSG\Controller\OSG.X\mcc_generated_files/eusart.c
+[v _EUSART_Transmit_ISR EUSART_Transmit_ISR `(v  1 e 1 0 ]
+{
+"189
+} 0
+"191
+[v _EUSART_Receive_ISR EUSART_Receive_ISR `(v  1 e 1 0 ]
+{
+"209
+} 0

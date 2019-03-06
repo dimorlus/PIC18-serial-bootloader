@@ -1,0 +1,32 @@
+MAINICON ICON "mchip.ico"
+
+VS_VERSION_INFO     VERSIONINFO
+  FILEVERSION       1,7,0,0
+  PRODUCTVERSION    1,7,0,0
+  FILEFLAGSMASK     VS_FFI_FILEFLAGSMASK
+  FILEFLAGS         VS_FF_PRERELEASE
+  FILEOS            VOS_NT_WINDOWS32
+  FILETYPE          VFT_APP
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+        BLOCK "040904b0" // Lang=english, CharSet=UCS
+        BEGIN
+          VALUE "CompanyName", "MLT\0"
+          VALUE "FileDescription", "PIC18 serial bootloader\0"
+          VALUE "FileVersion", "1.0.0\0"
+          VALUE "InternalName", "sbldr18\0"
+          VALUE "LegalCopyright", "Dmitry Orlov, 2019\0"
+          VALUE "LegalTrademarks", "dimorlus\0"
+          VALUE "OriginalFilename", "bldr_ser.exe\0"
+          VALUE "ProductName", "sbldr18\0"
+          VALUE "ProductVersion", "1.0.0\0"
+          VALUE "Comments", "PIC18 serial bootloader\0"
+          VALUE "Date", "03-06-19. 14:53:46\0"
+        END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+          VALUE "Translation", 0x409, 1252 /* english + UCS */
+  END
+END
