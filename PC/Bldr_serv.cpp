@@ -2,11 +2,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdarg.h>
 
-#include <vcl.h>
 #pragma hdrstop
 
+#ifdef GUI
 #include "StrUtils.h"
+#endif
 #include "Serial.h"
 #include "Hex.h"
 #include "Bldr_serv.h"
@@ -14,14 +16,30 @@
 //---------------------------------------------------------------------------
 
 #pragma package(smart_init)
+#pragma warn -8060  // Possibly incorrect assignment
+#pragma warn -8066  // Unreachable code
 
-TStrings *List;
+
+void *List;
 FILE *HexFile;
 //---------------------------------------------------------------------------
 
+#ifndef GUI
+void lprintf(void *List, const char* fmt, ...)
+{
+ char str[4096];
+ va_list args;
+ va_start(args, fmt);
+ vsprintf(str, fmt, args);
+ va_end(args);
+ if (str[strlen(str)] == '\n') printf("%s\r", str);
+ else printf(str);
+}
+#endif
+
 int SendFrame(void* port, const frame_t *frame)
 {
- u32 i;
+ u16 i;
  bool res = true;
  for(i=0; i < sizeof(header_t); i++)
   if (res) res &= PutChar(port, frame->buffer[i]);
@@ -300,7 +318,7 @@ int prog_states(void* port, bool start)
       fsend.header.data_length = 0;
       if (rec.n && (rec.type == htDat))
        {  //use previous hex record
-        if (fsend.header.address == -1)
+        if (fsend.header.address == 0xffffffffL)
          {
           fsend.header.address = rec.Addr+rec.i;
           copybuf(&rec, &fsend);
@@ -318,14 +336,14 @@ int prog_states(void* port, bool start)
         break;
        }
 
-      while (cp=fgets(hstr, sizeof(hstr), HexFile))
+      while ((cp=fgets(hstr, sizeof(hstr), HexFile)))
        {
         lprintf(List, "%s", hstr);
         if (HexStr(hstr, &rec))
          {
            if (rec.type == htDat)
             {
-             if (fsend.header.address == -1) fsend.header.address = rec.Addr;
+             if (fsend.header.address == 0xffffffffL) fsend.header.address = rec.Addr;
              if (copybuf(&rec, &fsend))
               {
                if (fsend.header.data_length == WRITE_FLASH_BLOCKSIZE)

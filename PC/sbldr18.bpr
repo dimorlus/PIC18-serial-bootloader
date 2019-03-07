@@ -3,18 +3,17 @@
 <PROJECT>
   <MACROS>
     <VERSION value="BCB.06.00"/>
-    <PROJECT value="D:\Projects\LED\Alex\OSG\Controller\PC\Bldr_ser.exe"/>
-    <OBJFILES value="Bldr_ser.obj Bldr_frm.obj Serial.obj StrUtils.obj sys_utils.obj 
-      Bldr_serv.obj Hex.obj"/>
-    <RESFILES value="Bldr_ser.res"/>
+    <PROJECT value="sbldr18.exe"/>
+    <OBJFILES value="pic18sbldr.obj Bldr_serv.obj Hex.obj Serial.obj"/>
+    <RESFILES value="sbldr18.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
     <DEFFILE value=""/>
-    <RESDEPEN value="$(RESFILES) Bldr_frm.dfm"/>
+    <RESDEPEN value="$(RESFILES)"/>
     <LIBFILES value=""/>
-    <LIBRARIES value="rtl.lib vcl.lib"/>
-    <SPARELIBS value="vcl.lib rtl.lib"/>
-    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi"/>
+    <LIBRARIES value="rtl.lib"/>
+    <SPARELIBS value="rtl.lib"/>
+    <PACKAGES value=""/>
     <PATHCPP value=".;"/>
     <PATHPAS value=".;"/>
     <PATHRC value=".;"/>
@@ -22,74 +21,71 @@
     <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
     <RELEASELIBPATH value="$(BCB)\lib\release"/>
     <LINKER value="ilink32"/>
-    <USERDEFINES value="GUI"/>
-    <SYSDEFINES value="NO_STRICT"/>
-    <MAINSOURCE value="Bldr_ser.cpp"/>
-    <INCLUDEPATH value="&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;D:\Projects\LED\Alex\OSG\Controller\PC;$(BCB)\include;$(BCB)\include\vcl"/>
-    <LIBPATH value="&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;D:\Projects\LED\Alex\OSG\Controller\PC;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT;_NO_VCL"/>
+    <MAINSOURCE value="sbldr18.bpf"/>
+    <INCLUDEPATH value="D:\Projects\LED\Alex\OSG\Controller\PC;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="D:\Projects\LED\Alex\OSG\Controller\PC;$(BCB)\lib\obj;$(BCB)\lib"/>
     <WARNINGS value="-w-par"/>
     <OTHERFILES value=""/>
   </MACROS>
   <OPTIONS>
-    <IDLCFLAGS value="-I&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot; 
-      -ID:\Projects\LED\Alex\OSG\Controller\PC -I$(BCB)\include 
-      -I$(BCB)\include\vcl -src_suffix cpp -DGUI -boa"/>
-    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -c -tW -tWM"/>
+    <IDLCFLAGS value="-ID:\Projects\LED\Alex\OSG\Controller\PC -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -tWC -tWM- -c"/>
     <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
     <RFLAGS value=""/>
     <AFLAGS value="/mx /w2 /zn"/>
-    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <LFLAGS value="-D&quot;&quot; -ap -Tpe -x -Gn"/>
     <OTHERFILES value=""/>
   </OPTIONS>
   <LINKER>
-    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLOBJ value="c0x32.obj $(OBJFILES)"/>
     <ALLRES value="$(RESFILES)"/>
-    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cw32.lib"/>
     <OTHERFILES value=""/>
   </LINKER>
   <FILELIST>
-      <FILE FILENAME="Bldr_ser.res" FORMNAME="" UNITNAME="Bldr_ser.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="Bldr_ser.cpp" FORMNAME="" UNITNAME="Bldr_ser" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="Bldr_frm.cpp" FORMNAME="Bldr" UNITNAME="Bldr_frm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="Serial.cpp" FORMNAME="" UNITNAME="Serial.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="StrUtils.cpp" FORMNAME="" UNITNAME="StrUtils.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="sys_utils.cpp" FORMNAME="" UNITNAME="sys_utils.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="Bldr_serv.cpp" FORMNAME="" UNITNAME="Bldr_serv" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
-      <FILE FILENAME="Hex.cpp" FORMNAME="" UNITNAME="Hex" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="sbldr18.res" FORMNAME="" UNITNAME="sbldr18.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="sbldr18.bpf" FORMNAME="" UNITNAME="sbldr18" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="pic18sbldr.cpp" FORMNAME="" UNITNAME="pic18sbldr" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Bldr_serv.cpp" FORMNAME="" UNITNAME="Bldr_serv.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Hex.cpp" FORMNAME="" UNITNAME="Hex.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Serial.cpp" FORMNAME="" UNITNAME="Serial" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>
 
   <IDEOPTIONS>
 [Version Info]
-IncludeVerInfo=1
+IncludeVerInfo=0
 AutoIncBuild=0
 MajorVer=1
-MinorVer=7
+MinorVer=0
 Release=0
 Build=0
 Debug=0
-PreRelease=1
+PreRelease=0
 Special=0
 Private=0
 DLL=0
 Locale=1033
-CodePage=1200
+CodePage=1252
 
 [Version Info Keys]
-CompanyName=MLT
-FileDescription=PIC18 serial bootloader
-FileVersion=1.0.0
-InternalName=sbldr18
-LegalCopyright=Dmitry Orlov, 2019
-LegalTrademarks=dimorlus
-OriginalFilename=bldr_ser.exe
-ProductName=sbldr18
-ProductVersion=1.0.0
-Comments=PIC18 serial bootloader
-Date=03-06-19. 14:53:46
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
 
 [Excluded Packages]
+C:\Program Files (x86)\Borland\CBuilder6\Bin\dclstd60.bpl=Borland Standard Components
 C:\Program Files (x86)\Borland\CBuilder6\Bin\dclclxstd60.bpl=Borland CLX Standard Components
 c:\program files (x86)\borland\cbuilder6\Projects\Bpl\dclusr60.bpl=Borland User Components
 c:\program files (x86)\borland\cbuilder6\Bin\dclbcbsmp60.bpl=Borland Sample Controls Design Time Package
@@ -131,12 +127,12 @@ D:\PCProjects\Bpl\tmstmsc6.bpl=TMS Component Pack
 
 [HistoryLists\hlIncludePath]
 Count=2
-Item0=C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\Projects\LED\Alex\OSG\Controller\PC;$(BCB)\include;$(BCB)\include\vcl
+Item0=D:\Projects\LED\Alex\OSG\Controller\PC;$(BCB)\include;$(BCB)\include\vcl
 Item1=$(BCB)\include;$(BCB)\include\vcl
 
 [HistoryLists\hlLibraryPath]
 Count=2
-Item0=C:\Program Files (x86)\Borland\CBuilder6\Projects;D:\Projects\LED\Alex\OSG\Controller\PC;$(BCB)\lib\obj;$(BCB)\lib
+Item0=D:\Projects\LED\Alex\OSG\Controller\PC;$(BCB)\lib\obj;$(BCB)\lib
 Item1=$(BCB)\lib\obj;$(BCB)\lib
 
 [HistoryLists\hlDebugSourcePath]
@@ -144,14 +140,8 @@ Count=1
 Item0=$(BCB)\source\vcl
 
 [HistoryLists\hlConditionals]
-Count=2
-Item0=GUI
-Item1=_DEBUG
-
-[HistoryLists\hlFinalOutputDir]
-Count=2
-Item0=D:\Projects\LED\Alex\OSG\Controller\PC\
-Item1=D:\Projects\LED\Alex\OSG\Controller\PC
+Count=1
+Item0=_DEBUG
 
 [Debugging]
 DebugSourceDirs=$(BCB)\source\vcl

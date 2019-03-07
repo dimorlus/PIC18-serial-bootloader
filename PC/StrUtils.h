@@ -23,7 +23,7 @@ extern int ncsplit(int num, char sch, char* str, ...);
 
 
 extern AnsiString asprintf(const char* fmt, ...);
-extern void lprintf(TStrings *List, const char* fmt, ...);
+extern void lprintf(void *List, const char* fmt, ...);
 
 
 #endif

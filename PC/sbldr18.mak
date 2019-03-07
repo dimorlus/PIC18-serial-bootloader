@@ -13,27 +13,26 @@ BCB = $(MAKEDIR)\..
 
 VERSION = BCB.06.00
 # ---------------------------------------------------------------------------
-PROJECT = D:\Projects\LED\Alex\OSG\Controller\PC\Bldr_ser.exe
-OBJFILES = Bldr_ser.obj Bldr_frm.obj Serial.obj StrUtils.obj sys_utils.obj \
-    Bldr_serv.obj Hex.obj
-RESFILES = Bldr_ser.res
-MAINSOURCE = Bldr_ser.cpp
-RESDEPEN = $(RESFILES) Bldr_frm.dfm
+PROJECT = sbldr18.exe
+OBJFILES = pic18sbldr.obj Bldr_serv.obj Hex.obj Serial.obj
+RESFILES = sbldr18.res
+MAINSOURCE = sbldr18.bpf
+RESDEPEN = $(RESFILES)
 LIBFILES = 
 IDLFILES = 
 IDLGENFILES = 
-LIBRARIES = rtl.lib vcl.lib
-PACKAGES = vcl.bpi rtl.bpi vclx.bpi
-SPARELIBS = vcl.lib rtl.lib
+LIBRARIES = rtl.lib
+PACKAGES = 
+SPARELIBS = rtl.lib
 DEFFILE = 
 OTHERFILES = 
 # ---------------------------------------------------------------------------
 DEBUGLIBPATH = $(BCB)\lib\debug
 RELEASELIBPATH = $(BCB)\lib\release
-USERDEFINES = GUI
-SYSDEFINES = NO_STRICT
-INCLUDEPATH = "C:\Program Files (x86)\Borland\CBuilder6\Projects";D:\Projects\LED\Alex\OSG\Controller\PC;$(BCB)\include;$(BCB)\include\vcl
-LIBPATH = "C:\Program Files (x86)\Borland\CBuilder6\Projects";D:\Projects\LED\Alex\OSG\Controller\PC;$(BCB)\lib\obj;$(BCB)\lib
+USERDEFINES = 
+SYSDEFINES = NO_STRICT;_NO_VCL
+INCLUDEPATH = D:\Projects\LED\Alex\OSG\Controller\PC;$(BCB)\include;$(BCB)\include\vcl
+LIBPATH = D:\Projects\LED\Alex\OSG\Controller\PC;$(BCB)\lib\obj;$(BCB)\lib
 WARNINGS= -w-par
 PATHCPP = .;
 PATHASM = .;
@@ -41,18 +40,17 @@ PATHPAS = .;
 PATHRC = .;
 PATHOBJ = .;$(LIBPATH)
 # ---------------------------------------------------------------------------
-CFLAG1 = -O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -c -tW -tWM
-IDLCFLAGS = -I"C:\Program Files (x86)\Borland\CBuilder6\Projects" \
-    -ID:\Projects\LED\Alex\OSG\Controller\PC -I$(BCB)\include \
-    -I$(BCB)\include\vcl -src_suffix cpp -DGUI -boa
+CFLAG1 = -O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -a8 -b- -k- -vi -tWC -tWM- -c
+IDLCFLAGS = -ID:\Projects\LED\Alex\OSG\Controller\PC -I$(BCB)\include \
+    -I$(BCB)\include\vcl -src_suffix cpp -boa
 PFLAGS = -$Y- -$L- -$D- -$A8 -v -JPHNE -M
 RFLAGS = 
 AFLAGS = /mx /w2 /zn
-LFLAGS = -D"" -aa -Tpe -x -Gn
+LFLAGS = -D"" -ap -Tpe -x -Gn
 # ---------------------------------------------------------------------------
-ALLOBJ = c0w32.obj sysinit.obj $(OBJFILES)
+ALLOBJ = c0x32.obj $(OBJFILES)
 ALLRES = $(RESFILES)
-ALLLIB = $(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib
+ALLLIB = $(LIBFILES) $(LIBRARIES) import32.lib cw32.lib
 # ---------------------------------------------------------------------------
 !ifdef IDEOPTIONS
 

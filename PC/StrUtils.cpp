@@ -285,7 +285,7 @@ AnsiString asprintf(const char* fmt, ...)
  */
 }
 //---------------------------------------------------------------------------
-void lprintf(TStrings *List, const char* fmt, ...)
+void lprintf(void *List, const char* fmt, ...)
 {
  if (List)
   {
@@ -296,26 +296,26 @@ void lprintf(TStrings *List, const char* fmt, ...)
    vsprintf(str, fmt, args);
    va_end(args);
    int i = 0;
-   while (List->Count > LOGLINES) List->Delete(0);
+   while (((TStrings*)List)->Count > LOGLINES) ((TStrings*)List)->Delete(0);
    do
     {
-     int Index = List->Count;
+     int Index = ((TStrings*)List)->Count;
      if (Index)
      {
       Index--;
-      aStr = List->Strings[Index];
-      List->Delete(Index);
+      aStr = ((TStrings*)List)->Strings[Index];
+      ((TStrings*)List)->Delete(Index);
      }
      while(str[i]&&str[i] != '\n')
       {
        if (str[i] == '\r') {i++; aStr="";}
        else aStr = aStr+str[i++];
       }
-     List->Insert(Index, aStr);
+     ((TStrings*)List)->Insert(Index, aStr);
      aStr = "";
      if (str[i] == '\n')
       {
-       List->Add("");
+       ((TStrings*)List)->Add("");
        i++;
       }
     }

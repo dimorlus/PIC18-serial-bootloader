@@ -18,14 +18,14 @@ typedef enum {cmVer=0, cmReadFh, cmWriteFh, cmEraseFh,
 typedef struct
  {
   u8 autobaud;
-  uint8_t  command;
-  uint16_t data_length;
+  u8  command;
+  u16 data_length;
   union
    {
     struct
      {
-      uint8_t  EE_key_1;
-      uint8_t  EE_key_2;
+      u8 EE_key_1;
+      u8 EE_key_2;
      };
     struct
      {
@@ -36,10 +36,10 @@ typedef struct
    {
     struct
      {
-      uint8_t  address_L;
-      uint8_t  address_H;
-      uint8_t  address_U;
-      uint8_t  address_unused;
+      u8 address_L;
+      u8 address_H;
+      u8 address_U;
+      u8 address_unused;
      };
     struct
      {
@@ -71,16 +71,16 @@ typedef union
    header_t header;
    union
     {
-     uint8_t data[WRITE_FLASH_BLOCKSIZE];
+     u8 data[WRITE_FLASH_BLOCKSIZE];
      answer_t answer;
     };
   };
- uint8_t buffer[WRITE_FLASH_BLOCKSIZE + sizeof(header_t)];
+ u8 buffer[WRITE_FLASH_BLOCKSIZE + sizeof(header_t)];
 }frame_t;
 
 
 //---------------------------------------------------------------------------
-extern TStrings *List;
+extern void *List;
 extern FILE *HexFile;
 //---------------------------------------------------------------------------
 extern u16 Version;
